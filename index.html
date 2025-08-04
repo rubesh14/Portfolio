@@ -1,115 +1,207 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Portfolio</title>
-    <style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rubesh M - Portfolio</title>
+  <style>
+    :root {
+      --primary-bg: #2c3e50;
+      --text-light: #ecf0f1;
+      --accent: #1abc9c;
+      --card-bg: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      line-height: 1.6;
+      background-color: var(--text-light);
+      color: #333;
+      transition: all 0.3s ease-in-out;
+    }
+
+    header {
+      background: var(--primary-bg);
+      color: var(--text-light);
+      padding: 30px 20px;
+      text-align: center;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      background: var(--primary-bg);
+      color: var(--text-light);
+      padding: 12px;
+      border-radius: 5px;
+      animation: slideInLeft 1s ease;
+    }
+
+    section {
+      padding: 25px;
+      margin: 20px auto;
+      max-width: 900px;
+      background: var(--card-bg);
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      animation: fadeInUp 1s ease;
+      transition: transform 0.3s ease;
+    }
+
+    section:hover {
+      transform: scale(1.01);
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    article {
+      margin-bottom: 25px;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: var(--primary-bg);
+      color: var(--text-light);
+      position: relative;
+      bottom: 0;
+      width: 100%;
+      margin-top: 30px;
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes slideInLeft {
+      from { opacity: 0; transform: translateX(-30px); }
+      to { opacity: 1; transform: translateX(0); }
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2rem;
+      }
+
+      section {
+        padding: 15px;
+        margin: 10px;
+      }
+
+      header p {
+        font-size: 0.9rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 1.8rem;
+      }
+
+      h2 {
+        font-size: 1.1rem;
+      }
+
       body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-}
+        font-size: 0.95rem;
+      }
 
-header {
-    background: #35424a;
-    color: #ffffff;
-    padding: 20px 0;
-    text-align: center;
-}
-
-h1 {
-    margin-bottom: 0.5rem;
-}
-
-h2 {
-    background: #35424a;
-    color: #ffffff;
-    padding: 10px;
-}
-
-section {
-    padding: 20px;
-    margin: 20px auto;
-    max-width: 800px;
-    background: #ffffff;
-    border-radius: 5px;
-}
-
-article {
-    margin-bottom: 20px;
-}
-
-footer {
-    text-align: center;
-    padding: 10px;
-    background: #35424a;
-    color: #ffffff;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
-    </style>
+      section {
+        padding: 12px;
+        margin: 8px;
+      }
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Your Name</h1>
-        <p>Entry-Level Java Developer</p>
-        <p>Motivated and detail-oriented Entry-Level Java Developer with practical experience gained through an internship at Besant Technologies.</p>
-    </header>
+  <header>
+    <h1>Rubesh M</h1>
+    <p>Full Stack JAVA Developer</p>
+    <p>
+      Motivated and detail-oriented Entry-Level Java Developer with practical experience gained through an internship at Besant Technologies. Proficient in Java, SQL, and HTML/CSS, with a strong foundation in object-oriented programming and web development. Eager to apply technical knowledge and problem-solving abilities in a collaborative and growth-driven software development environment.
+    </p>
+  </header>
 
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>Web Technologies: HTML (Block Elements, Inline Elements, Forms), JSP</li>
-            <li>Database: SQL (Commands, Aggregation Functions, JOIN Operations, Stored Procedures, Views), MySQL</li>
-            <li>Programming Languages: Java (OOP Concepts, String Functions, Collections, Exceptions, Interfaces)</li>
-            <li>Frameworks/Tools: Spring Boot, Eclipse IDE, Visual Studio</li>
-        </ul>
-    </section>
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>Web Technologies: HTML (Block Elements, Inline Elements, Forms), JSP</li>
+      <li>Database: SQL (Commands, Aggregation Functions, JOIN Operations, Stored Procedures, Views), MySQL</li>
+      <li>Programming Languages: Java (OOP Concepts, String Functions, Collections, Exceptions, Interfaces)</li>
+      <li>Frameworks/Tools: Spring Boot, Eclipse IDE, Visual Studio</li>
+    </ul>
+  </section>
 
-    <section id="projects">
-        <h2>Projects</h2>
+  <section id="projects">
+    <h2>Projects</h2>
 
-        <article>
-            <h3>HR, Manager, Employee Management System</h3>
-            <p>
-                Designed and developed a role-based management system where the HR can manage both managers and employees, while managers can manage employees using full CRUD operations. Implemented a secure REST API with OTP-based authentication using token generation for login validation. Integrated MySQL for persistent data storage and used Spring Boot to build scalable backend services.
-            </p>
-            <a href="https://github.com/rubesh14/repo" target="_blank">View Project</a>
-        </article>
+    <article>
+      <h3>HR, Manager, Employee Management System</h3>
+      <p>
+        Designed and developed a role-based management system where the HR can manage both managers and employees, while managers can manage employees using full CRUD operations. Implemented a secure REST API with OTP-based authentication using token generation for login validation. Integrated MySQL for persistent data storage and used Spring Boot to build scalable backend services.
+      </p>
+      <a href="https://github.com/rubesh14/repo" target="_blank">View Project</a>
+    </article>
 
-        <article>
-            <h3>Purchase and Sale Management System</h3>
-            <p>
-                The Purchase and Sales Management System project stores the history of items purchased by the owner from other shops. It displays the current stock of items in the shop, the purchase history of customers with date and time, and shows profit or loss. This project helps users refer to data for inventory tracking and financial analysis.
-            </p>
-            <a href="https://github.com/rubesh14/repo" target="_blank">View Project</a>
-        </article>
-    </section>
+    <article>
+      <h3>Purchase and Sale Management System</h3>
+      <p>
+        The Purchase and Sales Management System project stores the history of items purchased by the owner from other shops. It displays the current stock of items in the shop, the purchase history of customers with date and time, and shows profit or loss. This project helps users refer to data for inventory tracking and financial analysis.
+      </p>
+      <a href="https://github.com/rubesh14/repo" target="_blank">View Project</a>
+    </article>
+  </section>
 
-    <section id="certifications">
-        <h2>Certifications</h2>
-        <ul>
-            <li>Full-stack JAVA - Besant Technology</li>
-            <li>Database Management System - NPTEL</li>
-            <li>SQL, JAVA - HackerRank</li>
-        </ul>
-    </section>
+  <section id="certifications">
+    <h2>Certifications</h2>
+    <ul>
+      <li>Full-stack JAVA - Besant Technology</li>
+      <li>Database Management System - NPTEL</li>
+      <li>SQL, JAVA - HackerRank</li>
+    </ul>
+  </section>
 
-    <section id="education">
-        <h2>Education</h2>
-        <p>
-            Karpagam Institute of Technology, Coimbatore<br>
-            B.Tech in Information Technology<br>
-            CGPA: 8.7/10.0
-        </p>
-    </section>
+  <section id="education">
+    <h2>Education</h2>
+    <p>
+      Karpagam Institute of Technology, Coimbatore<br />
+      B.Tech in Information Technology<br />
+      CGPA: 8.7/10.0
+    </p>
+  </section>
 
-    <footer>
-        <p>&copy; 2025 Your Name. All Rights Reserved.</p>
-    </footer>
+  <footer>
+    <p>&copy; 2025 Rubesh M. All Rights Reserved.</p>
+  </footer>
 </body>
 </html>
